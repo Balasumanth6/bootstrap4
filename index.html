@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/styles-old.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>    
 </head>
 
@@ -401,8 +401,9 @@
 		$(document).ready(function() {
 
 			$('#mycarousel').carousel({ interval:2000 });
-
+            console.log('hello');
 			$("#carouselButton2").click(function() {
+            console.log('hello2');
 
 				if ($("#carouselButton").children().hasClass('fa-pause')) {
 	 				$("#mycarousel").carousel('pause');
