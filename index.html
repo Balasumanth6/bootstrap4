@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>    
-</head>
+</header>
 
 <body>
 
@@ -29,7 +29,8 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a href="" data-toggle="modal" data-target="#loginModal">
+                    <!-- <a href="" data-toggle="modal" data-target="#loginModal"> -->
+                    <a id="loginButton">
                         <span class="fa fa-sign-in"></span>
                         Login
                     </a>
@@ -42,7 +43,7 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title"> Login</h4>
+                    <h4 class="modal-title text-white"> Login</h4>
                     <button type="button" class="close" data-dismiss="modal">
                         &times;
                     </button>
@@ -85,7 +86,7 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-3 align-self-center text-center">
+                <div class="col-12 col-sm-3 align-self-center text-center" id="max150">
                     <br class="visible-xs">
                     <img src="img/logo.png" class="img-fluid">
                     <br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
@@ -93,7 +94,10 @@
                 <div class="col-sm-3 align-self-center">
                     <div class="col-12 col-sm-10 offset-sm-1 align-self-center text-center">
                         <!-- <a href="#ReserveForm"><button type="submit" class="btn btn-warning btn-block" data-toggle="tooltip" data-html="true" title="Or Call Us at <br><strong>+98480 22335</strong>" data-placement="bottom"> Reserve Table</button></a> -->
-                        <a><button data-target="#reserveModal" type="submit" data-toggle="modal" class="btn btn-warning btn-block"> Reserve Table</button></a>
+                        <a id="reserveButton">
+                        <!-- <button data-target="#reserveModal" type="submit" data-toggle="modal" class="btn btn-warning btn-block"> Reserve Table</button> -->
+                        <button type="submit" class="btn btn-warning btn-block"> Reserve Table</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -105,7 +109,7 @@
             <div class="modal-content">
 
                 <div class="modal-header">
-                	<h4 class="modal-title"> Reserve a Table</h4>
+                	<h4 class="modal-title text-white"> Reserve a Table</h4>
 					<button type="button" class="close" data-dismiss="modal"> &times;</button>
                 </div>
 
@@ -401,9 +405,8 @@
 		$(document).ready(function() {
 
 			$('#mycarousel').carousel({ interval:2000 });
-            console.log('hello');
+            
 			$("#carouselButton2").click(function() {
-            console.log('hello2');
 
 				if ($("#carouselButton").children().hasClass('fa-pause')) {
 	 				$("#mycarousel").carousel('pause');
@@ -416,9 +419,20 @@
 	 				$("#carouselButton").children("span").addClass('fa-pause');
 				}
 			});
-		});
-	</script>
 
+            $('#loginButton').click(function() {
+                $('#loginModal').modal('toggle');
+
+            });
+
+            $('#reserveButton').click(function(){
+                $('#reserveModal').modal('toggle');
+            });
+            
+		});
+
+
+	</script>
 
 </body>
 
