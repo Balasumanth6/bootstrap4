@@ -1,0 +1,377 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200707.220124.4136.0.001.json",
+    "dumpEventTime": "2020-07-07T22:01:25Z",
+    "dumpEventTimeStamp": "1594139485156",
+    "processId": 4136,
+    "cwd": "C:\\Users\\Sukesh\\Documents\\GitHub\\Bootstrap4\\conFusion",
+    "commandLine": [
+      "node",
+      "C:\\Users\\Sukesh\\AppData\\Roaming\\npm\\\\node_modules\\browser-sync\\dist\\bin.js",
+      "start",
+      "--server",
+      "--files",
+      "*.*, */*.*"
+    ],
+    "nodejsVersion": "v12.16.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.1",
+      "v8": "7.8.279.23-node.31",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.19041",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-5250U CPU @ 1.60GHz",
+        "speed": 1596,
+        "user": 59385328,
+        "nice": 0,
+        "sys": 46171593,
+        "idle": 259008890,
+        "irq": 5975343
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-5250U CPU @ 1.60GHz",
+        "speed": 1596,
+        "user": 59340109,
+        "nice": 0,
+        "sys": 36763281,
+        "idle": 268462250,
+        "irq": 796250
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-5250U CPU @ 1.60GHz",
+        "speed": 1596,
+        "user": 65696515,
+        "nice": 0,
+        "sys": 38142500,
+        "idle": 260726625,
+        "irq": 556812
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-5250U CPU @ 1.60GHz",
+        "speed": 1596,
+        "user": 64774296,
+        "nice": 0,
+        "sys": 36731562,
+        "idle": 263059750,
+        "irq": 469406
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "78:0c:b8:2c:3b:d9",
+        "address": "fe80::a01c:dda:51c2:d5b5",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "78:0c:b8:2c:3b:d9",
+        "address": "192.168.0.7",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "DESKTOP-U71LDVB"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff79a0319f9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff79a035e1c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff79a034dd8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff79a1334cb",
+      "symbol": "v8::base::CPU::has_sse+38363"
+    },
+    {
+      "pc": "0x00007ff79a949f4e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff79a932021",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff79a7fe57c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff79a8097d0",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff79a8062f4",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff79a7fbb13",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff79a7fa184",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2452"
+    },
+    {
+      "pc": "0x00007ff79a81b36d",
+      "symbol": "v8::internal::Factory::NewFillerObject+61"
+    },
+    {
+      "pc": "0x00007ff79a580c51",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1665"
+    },
+    {
+      "pc": "0x00007ff79ad94ddd",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x00007ff79ad19543",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40627"
+    },
+    {
+      "pc": "0x000000c29c1b03db",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2157293568,
+    "totalCommittedMemory": 2157293568,
+    "usedMemory": 2145061616,
+    "availableMemory": 47691680,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 7340032,
+        "committedMemory": 7340032,
+        "capacity": 3666096,
+        "used": 366360,
+        "available": 3299736
+      },
+      "old_space": {
+        "memorySize": 2144747520,
+        "committedMemory": 2144747520,
+        "capacity": 2140663608,
+        "used": 2140459488,
+        "available": 204120
+      },
+      "code_space": {
+        "memorySize": 954368,
+        "committedMemory": 954368,
+        "capacity": 690944,
+        "used": 690944,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 1052672,
+        "capacity": 644960,
+        "used": 644960,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 2887680,
+        "committedMemory": 2887680,
+        "capacity": 2864272,
+        "used": 2864272,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 3666096,
+        "used": 0,
+        "available": 3666096
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 423.281,
+    "kernelCpuSeconds": 544.453,
+    "cpuConsumptionPercent": 123.751,
+    "maxRss": 4101488640,
+    "pageFaults": {
+      "IORequired": 1814668,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 832,
+      "writes": 5
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "=C:": "C:\\Users\\Sukesh\\Documents\\GitHub\\Bootstrap4\\conFusion",
+    "=ExitCode": "00000000",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANDROID_SDK_HOME": "C:\\Android",
+    "APPDATA": "C:\\Users\\Sukesh\\AppData\\Roaming",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-U71LDVB",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "dp0": "C:\\Users\\Sukesh\\AppData\\Roaming\\npm\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOME": "C:\\Users\\Sukesh",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Sukesh",
+    "LOCALAPPDATA": "C:\\Users\\Sukesh\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-U71LDVB",
+    "NUMBER_OF_PROCESSORS": "4",
+    "NUTCROOT": "C:\\Program Files\\PTC\\MKS Toolkit",
+    "OneDrive": "C:\\Users\\Sukesh\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\PTC\\MKS Toolkit\\bin64;C:\\Program Files\\PTC\\MKS Toolkit\\bin;C:\\Program Files\\PTC\\MKS Toolkit\\bin\\X11;C:\\Program Files\\PTC\\MKS Toolkit\\mksnt;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\System32;C:\\Windows;C:\\Windows\\System32\\wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Xilinx92i\\bin\\nt64;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Android;C:\\Program Files\\nodejs\\;C:\\Users\\Sukesh\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Users\\Sukesh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\AVG\\Av;C:\\Python27;C:\\Users\\Sukesh\\AppData\\Local\\GitHub\\PortableGit_f02737a78695063deace08e96d5042710d3e32db\\cmd;C:\\TDM-GCC-64\\bin;C:\\Users\\Sukesh\\AppData\\Roaming\\npm;C:\\Users\\Sukesh\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Sukesh\\AppData\\Local\\Microsoft\\WindowsApps;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 61 Stepping 4, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3d04",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Sukesh\\AppData\\Local\\Temp",
+    "TERMCAP": "C:\\Program Files\\PTC\\MKS Toolkit\\etc\\termcap",
+    "TERMINFO": "C:\\Program Files\\PTC\\MKS Toolkit\\usr\\lib\\terminfo",
+    "TMP": "C:\\Users\\Sukesh\\AppData\\Local\\Temp",
+    "UOIPME_REG_PATH": "C:\\Program Files\\Intel Corporation\\USB over IP",
+    "USERDOMAIN": "DESKTOP-U71LDVB",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-U71LDVB",
+    "USERNAME": "Sukesh",
+    "USERPROFILE": "C:\\Users\\Sukesh",
+    "windir": "C:\\WINDOWS",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll"
+  ]
+}
